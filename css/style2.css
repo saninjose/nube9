@@ -399,12 +399,34 @@ top: 7%;
     background-color: trasnparent;
   }
 
+  .nube9descrip{
+    font-family: tiempos;
+    text-align: center;
+    font-size: 3em;
+    color: antiquewhite;
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
   .descrip {
     width: 97%;
     padding-right: 1px;
     font-size: 1em;
     color: white;
     float: left;
+  }
+
+  .dropbtn2 {
+    background-color: transparent;
+    position: absolute;
+    overflow-y: scroll;
+    right: 8%;
+    top: 2%;
+    color: antiquewhite;
+    padding: 0px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
   }
 
   .dropdown-content {
