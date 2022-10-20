@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>NUBE 9</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="icon" href="css/n9.ico">
+
+</head>
+
+<body onmousemove="getCursorPosition(event)">
+
+  <div class="cursor-positionx">X: <span id="cursor-position-x"></span> </div>
+  <div class="cursor-positionx2">X: <span id="cursor-position-x2"></span> </div>
+  <div class="cursor-positiony">Y: <span id="cursor-position-y"></span> </div>
+  <div class="cursor-positiony2">Y: <span id="cursor-position-y2"></span> </div>
+
+
+  <!--Esto es para el fondo de particulas voladoras, activar en el css si se quire usar -->
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <!--Esto es para el fondo de particulas voladoras, activar en el css si se quire usar -->
+
+  <div class="contenedortitulo">
+    <div class="franja">
+      <!--<img src="imagenes/NUBE9.svg" alt="NUBE 9">-->
+      <button onclick="titulo()" class="dropbtntitulo">N<br>U<br>B<br>E<br>9</button>
+      <div id="myDropdown" class="dropdown-content">
+      <button onclick="titulo()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+        <h2>NUBE 9</h2>
+        <p class="nube9descrip">Nube Nueve es un estado y un lugar en el que Dante, en la Divina Comedia, se vio envuelto y cegado por la luz "cielo más cielo", un momento en el que lo terrenal y lo extraterrenal se unen, en el que lo ordinario y lo
+          extraordinario proponen una imagen.</p>
+        <p class="descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p class="descrip2">Créditos<br>Diseño: Jerónimo Velásquez y José Sanín</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="franja">
+      <div class="meteorito">
+        <img src="imagenes/1.png" alt="meteorito">
+        <button onclick="meteorito()" class="dropbtn">2012<br>P-SFEW.US</button>
+        <div id="myDropdown2" class="dropdown-content2">
+          <button onclick="meteorito()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Seeking a friend for the end of the world<br>(Buscando un amigo para el fin del mundo)<br>– Lorene Scafaria</h2>
+          <p class="descrip">Ante la lluvia de negras cenizas y trozos de rocas que caían del cielo, buscaron consuelo el uno en el otro, el vacío de cada uno se había fundido en un gesto tan cariñoso para afrontar lo inminente.</p>
+          <iframe width="100%" height="80%" src="https://www.youtube.com/embed/EmXWcXKXWBk?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito2">
+        <img src="imagenes/2.png" alt="meteorito2">
+        <button onclick="meteorito2()" class="dropbtn">1998<br>P-LN.CAN</button>
+        <div id="myDropdown3" class="dropdown-content2">
+          <button onclick="meteorito2()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Last Night<br>(La última noche)<br>– Don McKellar</h2>
+          <p class="descrip">Escuchando la canción los dos se sientan en el techo, uno frente al otro; a medida que pasan los minutos finales, una extraña luz que es visible incluso en el día; aumenta de tamaño por cada hora que pasa en la noche. Todo debe irse, ese es el pacto.<br>¿Dónde estarás a la media noche? ¿Qué vas a hacer? ¿Con quién vas a estar? La gente desea tener el final perfecto, pero escuchen, no es el fin del mundo.</p>
+          <iframe width="100%" height="80%" src="https://www.youtube.com/embed/cnAXPY8GLDk?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito3">
+        <img src="imagenes/3.png" alt="meteorito3">
+        <button onclick="meteorito3()" class="dropbtn">2019<br>P-COS.ZAF</button>
+        <div id="myDropdown4" class="dropdown-content2">
+          <button onclick="meteorito3()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Color out space<br>(El color que cayó del espacio)<br>– Richard Stanley</h2>
+          <p class="descrip">El mundo se deforma, se torna irreconocible y se vuelve contra nosotros mismos, el campo parece refulgir con irisadas auroras boreales, aunque no es la primera vez.<br>Un miedo primario e incomprensible nos inunda con un cromatismo inexistente en la tierra.
+nadie sabe qué está pasando, pero todos hemos quedado atónitos durante largo rato, las luces y los sonidos son extraños y la naturaleza empieza a alterarse.
+</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/uEX8vtCMqQE?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito4">
+        <img src="imagenes/4.png" alt="meteorito4">
+        <button onclick="meteorito4()" class="dropbtn">2018<br>P-LM.FR</button>
+        <div id="myDropdown5" class="dropdown-content2">
+          <button onclick="meteorito4()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Les Météorites<br>(Los meteoritos)<br>– Romain Laguna</h2>
+          <p class="descrip">He intentado buscar historias a las que adherirme y al parecer no son tan visibles. ¿Será acaso la desilusión de lo que sucede hoy en día? si todo es perfecto, ¿Será acaso el presagio de una nueva vida? al parecer no me es visible.<br>No habla y no siente la necesidad de hacer cosas que le sean típicas, luego murmura: lo he intentado, es decir, adentrarme a la naturaleza y encontrar…la cercanía.<br>Esta es la historia.<br><br><a href="https://pelisflix.ink/pelicula/les-meteorites-los-meteoritos/" target="_blank">Les Météorites (Los meteoritos)</a>
+</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/c4Xbe8a8ANs?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito5">
+        <img src="imagenes/5.png" alt="meteorito5">
+        <button onclick="meteorito5()" class="dropbtn">2016<br>P-BS.NL</button>
+        <div id="myDropdown6" class="dropdown-content2">
+          <button onclick="meteorito5()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Beyond sleep<br>(Más allá del sueño)<br>– Boudewijn Koole</h2>
+          <p class="descrip">Willem afirma: Allá donde el sol nunca se pone, justo en aquellas zonas donde las piedras del cielo han dejado huellas de sus rastros, los animales y las plantas han hecho su hogar, el viaje mítico ha creado de forma brillante la inmensa tundra que visualiza lo que pasa por su cabeza.<br>Busca, se tropieza y sufre a medida que atraviesa el sádico universo, los animales y las plantas pertenecen al mundo exterior, todo desaparece.</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TtmYZ-mjEX0?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito6">
+        <img src="imagenes/6.png" alt="meteorito6">
+        <button onclick="meteorito6()" class="dropbtn">2021<br>P-DLU.US</button>
+        <div id="myDropdown7" class="dropdown-content2">
+          <button onclick="meteorito6()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Don’t look up<br>(No miren arriba)<br>– Adam Mckay</h2>
+          <p class="descrip">No pudo dormir durante dos noches, tuvo uno de esos momentos en los que la pérdida de compostura le llevó a presagiar con precisión el evento.<br>Se los juro, no quería hacerlo, no quería predecir lo que todos desestimaron. Mierda, está sucediendo ahora, tenemos que encargarnos; de nuevo pierde la compostura y despotrica mediante una voz que les muestra a los otros los visos de su sádico universo.<br><br>Está condenada, no quiere mirar hacia arriba.</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RbIxYm3mKzI?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito7">
+        <img src="imagenes/7.png" alt="meteorito7">
+        <button onclick="meteorito7()" class="dropbtn">2013<br>P-C.US</button>
+        <div id="myDropdown8" class="dropdown-content2">
+          <button onclick="meteorito7()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Coherence<br>(coherencia)<br>– James Ward Byrkit</h2>
+          <p class="descrip">Algo ha cambiado, Shane lo ha dicho, entonces lo que parecía una fantasía se ha convertido en realidad y Shane no lo deja de repetir, algo ha cambiado; aunque su hermano nos había avisado de aquella posibilidad.<br><br>Desorientados y desconcertados nos preguntamos cómo hacer para que de nuevo todo funcione en conjunto, aquello que hemos visto desde el abrigado interior de nuestras casas. Ann observa que con suerte nos llegará el día en que tendremos que enfrentar lo sucedido, nosotros somos solo visitantes, no pertenecemos aquí, somos los visitantes, reitera y ¿qué sucederá ahora?</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eo3If7uZOo4?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito8">
+        <img src="imagenes/8.png" alt="meteorito8">
+        <button onclick="meteorito8()" class="dropbtn">2014<br>P-CCC.AR</button>
+        <div id="myDropdown9" class="dropdown-content2">
+          <button onclick="meteorito8()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>El color que cayó del cielo<br>- Sergio Wolf</h2>
+          <p class="descrip">He pasado del mito a la ciencia, de la ciencia al mercado, del mercado a las instituciones y de las instituciones a lo divino en busca del depositario o el propiciador de estos deseos. La historia de esta obsesión ha sido casi escondida o conocida de un modo fragmentario.<br><br>Yo no sé qué me han hecho tus ojos, pero me han llevado a rumbos inesperados, en donde has cavado agujeros en los que se han relegado las leyendas. Estoy dispuesto a escarbar en aquellos orígenes, convencido de que si algo cae del cielo, no es propiedad de nadie.</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/22F4CQiaUSE?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito9">
+        <img src="imagenes/9.png" alt="meteorito9">
+        <button onclick="meteorito9()" class="dropbtn">2010<br>P-NO.AR</button>
+        <div id="myDropdown10" class="dropdown-content2">
+          <button onclick="meteorito9()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>La nación oculta<br>- Juan Carlos Martínez</h2>
+          <p class="descrip">No me imagino qué harás ahora en las entrañas de este territorio en medio de los zumbidos que durante siglos han revolcado a estos suelos.<br><br>Lihuen parado frente a la roca que había encontrado en la gran explanada le responde: todo lo que hay abajo, hay arriba, me interesa mucho el desentierre, la idea de que existe algo que merece salir a la superficie, algo que ilumine. Es habitual para nosotros, los habitantes del desierto, que al observar el cielo se converse sobre las “señas” que aparecen en él.<br><br>Con un leve rictus Robert Haag observa la roca, la filma pensando que en estos tiempos de lo enorme es mejor hablar de lo pequeño, de los actos invisibles que ayudan a encontrar “nuevos caminos”. Luego de haberse topado con una, ha tratado de encontrar más en este mundo que pareciera no volverá a ser el mismo.</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7iC7Glj_eJA?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="franja">
+      <div class="meteorito10">
+        <img src="imagenes/10.png" alt="meteorito10">
+        <button onclick="meteorito10()" class="dropbtn">2021<br>P-SN.GB</button>
+        <div id="myDropdown11" class="dropdown-content2">
+          <button onclick="meteorito10()" class="dropbtn2"><div class="cajabotoncierre">X</div></button>
+          <h2>Silent night<br>(Última noche)<br>– Camille Griffin</h2>
+          <p class="descrip">Mustio le responde que sí, que probablemente. Ella es una buena persona, es una buena mujer, se comenta Simón a sí mismo al haberle respondido de forma afirmativa y sin titubeos.<br><br>Una sonrisa desesperada y de autodesprecio se refleja en la mirada del hombre. Debe haber alguna manera de hacer algo para detener lo que en apariencia se viene, piensa. Acabo de verla rara porque no interioriza de manera más profunda lo acontecido, solo presenta esa falsa tranquilidad con que se afrontan los miedos, pero hay algo sorprendente y extraño en ver en ella el fin del mundo, como si hubiera llegado de nuevo ese esperado día del año.<br><br>Te ves perfecta, pronuncia Simón.</p>
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bRvIG4_DTWk?controls=0&loop=1">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  </div>
+
+
+  <script>
+    /* Coordenadas en pixeles */
+    function getCursorPosition(event) {
+      document.getElementById("cursor-position-x").textContent = event.clientX;
+      document.getElementById("cursor-position-x2").textContent = event.clientX;
+      document.getElementById("cursor-position-y").textContent = event.clientY;
+      document.getElementById("cursor-position-y2").textContent = event.clientY;
+    }
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function titulo() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+
+        }
+      }
+    }
+
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function meteorito() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function meteorito2() {
+      document.getElementById("myDropdown3").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function meteorito3() {
+      document.getElementById("myDropdown4").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function meteorito4() {
+      document.getElementById("myDropdown5").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+    function meteorito5() {
+      document.getElementById("myDropdown6").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+    function meteorito6() {
+      document.getElementById("myDropdown7").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+    function meteorito7() {
+      document.getElementById("myDropdown8").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+    function meteorito8() {
+      document.getElementById("myDropdown9").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+    function meteorito9() {
+      document.getElementById("myDropdown10").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+    function meteorito10() {
+      document.getElementById("myDropdown11").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content2");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
