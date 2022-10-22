@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background-color: #2e2e2e;
-  background-image: linear-gradient(lightgrey 5%, grey 35%, #2e2e2e 75%);
+  background-color: /*#2e2e2e*/ #35353f;
+  background-image: linear-gradient(lightgrey 5%, grey 35%, /*#2e2e2e*/ #35353f 75%);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -27,7 +27,10 @@ body {
   background-attachment: scroll; /*o fixed*/
     }
 
-    iframe{ border: none;}
+    iframe{
+      border: none;
+      margin-top: 2%;
+    }
 
 img{
   max-width: 100%;
@@ -106,8 +109,9 @@ top: 95%;
 .titulin{
   font-size: 1em;
     color: white;
-    width: 80%;
+    width: 90%;
     margin: 0;
+    float: left;
 
 }
 
@@ -131,6 +135,8 @@ top: 95%;
   font-size: 1em;
   color: white;
   float: left;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 
