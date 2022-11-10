@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>NUBE 9</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="icon" href="css/n9.ico">
+
+</head>
+
+<body onmousemove="getCursorPosition(event)">
+
+  <div class="cursor-positionx">X: <span id="cursor-position-x"></span> </div>
+  <div class="cursor-positionx2">X: <span id="cursor-position-x2"></span> </div>
+  <div class="cursor-positiony">Y: <span id="cursor-position-y"></span> </div>
+  <div class="cursor-positiony2">Y: <span id="cursor-position-y2"></span> </div>
+  <section class="viewport"><span class="name"></span><span id="viewport"></span></section>
+
+
+  <!--Esto es para el fondo de particulas voladoras, activar en el css si se quire usar -->
+  <div class="contenedorestrellas">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+  </div>
+  <!--Esto es para el fondo de particulas voladoras, activar en el css si se quire usar -->
+
+  <div class="contenedortitulo">
+    <div class="franja">
+      <!--<img src="imagenes/NUBE9.svg" alt="NUBE 9">-->
+      <button class="dropbtntitulo"> <a href="index.html">N<br>U<br>B<br>E<br>9</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+<div id="contenido1"><img class="imgport" src="imagenes/portadas/18-cosmicomics.png" alt="Lucky Starr and the Pirates of the Asteroids – Isaac Asimov (Paul French)" width="100%"></div>
+<div id="contenido2"><img class="imgport" src="imagenes/portadas/18-cosmicomics.png" alt="Lucky Starr and the Pirates of the Asteroids – Isaac Asimov (Paul French)" width="100%"></div>
+<div id="contenido3"><img class="imgport" src="imagenes/portadas/18-cosmicomics.png" alt="Lucky Starr and the Pirates of the Asteroids – Isaac Asimov (Paul French)" width="100%"></div>
+<div id="contenido4"><img class="imgport" src="imagenes/portadas/18-cosmicomics.png" alt="Lucky Starr and the Pirates of the Asteroids – Isaac Asimov (Paul French)" width="100%"></div>
+<div id="contenido5"><p class="fichatecregistro"><font style="color: white;">NUBE 9</font><br>2022<br>© Giovanni Vargas<br><br><font style="color: white;">Textos</font><br>Liliana Colanzi<br>Juan Cortés<br>Álvaro Robledo<br><br><font style="color: white;">Programador</font><br>David Mora<br><br><font style="color: white;">Diseño</font><br><a href="https://talleragosto.com
+" Target="_blank"> Taller Agosto</a><br><br><font style="color: white;">Impresión</font><br>Torrebeta Manufactura Gráfica<br>Zetta Comunicadores S.A<br><br><font style="color: white;">Encuadernación</font><br>César Faustino<br><br><font style="color: white;">Correción de estilo</font><br>Ana López<br>Álvaro José Moreno<br>Diego Uribe Holguín<br><br><font style="color: white;">Agradecimientos</font><br>Felipe González de Laguna Libros<br>Paula Leuro<br><br><br><br>Proyecto ganador de la Beca para proyectos editoriales independientes en artes plásticas del Instituto Distrital de las Artes Idartes.<br><br></p></div>
+<div id="contenido6"><p class="fichatecregistro"><font style="color: white;">Si se deshoja este libro y se disponen las primeras 363 páginas en una retícula de 33x11 ordenándolas de izquierda a derecha y de arriba a abajo, se formará un mapa de los meteoritos que han caído en la Tierra desde 1332 y han sido avistados, junto con los meteoritos provenientes de Marte. El tamaño de los círculos y rombos en el papel corresponde a su masa: entre más grande el meteorito más grande el círculo o el rombo.</font></p> </div>
+<div id="contenido7"> </div>
+
+
+
+  </div>
+
+
+
+  <script>
+    /* Coordenadas en pixeles */
+    function getCursorPosition(event) {
+      document.getElementById("cursor-position-x").textContent = event.clientX;
+      document.getElementById("cursor-position-x2").textContent = event.clientX;
+      document.getElementById("cursor-position-y").textContent = event.clientY;
+      document.getElementById("cursor-position-y2").textContent = event.clientY;
+    }
+
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function titulo() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName(".dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+
+        }
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>
