@@ -21,6 +21,7 @@ body {
   background-image: linear-gradient(lightgrey 5%, grey 35%,
       /*#2e2e2e*/
       #35353f 75%);
+      margin:0;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -994,7 +995,7 @@ p {
     position: fixed;
     float: right;
     text-align: left;
-    right: 7%;
+    right: 3%;
     top: 3%;
   }
 
@@ -1004,7 +1005,7 @@ p {
     position: fixed;
     float: right;
     text-align: left;
-    right: 7%;
+    right: 3%;
     top: 95%;
   }
 
@@ -1079,7 +1080,6 @@ p {
     display: none;
     position: fixed;
     left: 3%;
-    top: 0%;
     padding: 3%;
     background-color: rgba(45, 45, 46, 0.9);
     width: 85%;
