@@ -281,6 +281,7 @@ p {
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
+  z-index: 99;
 }
 
 .dropbtntitulo a{
