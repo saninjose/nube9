@@ -278,6 +278,7 @@ p {
   font-size: 2.5em;
   border: none;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .dropbtntitulo a{
