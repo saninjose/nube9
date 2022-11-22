@@ -2,6 +2,8 @@ html {
   height: 100%;
 }
 
+button{-webkit-appearance: none;}
+
 @font-face {
   font-family: 'tiempos';
   src: url('tipo/TiemposDisplay-LightItalic.woff?#iefix') format('woff'), url(),
