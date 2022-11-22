@@ -267,6 +267,10 @@ p {
   cursor: pointer;
 }
 
+button.dropbtbtitulo{
+  height:35px;
+}
+
 .dropbtntitulo {
   font-family: simplon;
   background-color: transparent;
